@@ -43,6 +43,7 @@ function onPictureContainerClick(evt) {
     function closedModalOfEsc(evt) {
         if (evt.key === 'Escape') {
             modal.close();
+            document.removeEventListener('keydown', closedModalOfEsc);
         }
     }
 }
